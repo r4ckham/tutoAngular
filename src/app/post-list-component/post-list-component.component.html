@@ -1,0 +1,30 @@
+<li [ngClass]="{'list-group-item': true,
+                'list-group-item-success': post.loveIts > 0,
+                'list-group-item-danger': post.loveIts < 0}" class="row">
+
+  <div class="container">
+
+    <div class="row">
+        <h4 class="pull-left">
+          {{post.title}}
+        </h4>
+        <i class="pull-right" style="margin-right:2%;color: dimgrey">
+          {{post.createdAt | date: 'short' | uppercase }}
+        </i>
+    </div>
+
+    <div class="row">
+      <p style="text-align: justify;margin-right:2%;">{{post.content}}</p>
+    </div>
+
+    <div class="row">
+      <div class="btn-group">
+        <button class="btn btn-success" (click)="post.likeIt()">Love it!</button>
+        <span class="btn btn-default">{{post.loveIts}}</span>
+        <button class="btn btn-danger" (click)="post.unlikeIt()">Dislike it!</button>
+      </div>
+    </div>
+
+  </div>
+
+</li>
