@@ -9,24 +9,8 @@ import {Post} from '../post';
 export class PostListComponentComponent implements OnInit {
 
   @Input() post: Post;
-  /*@Input() content: string;
-
-  loveIts: number;
-  createdAt: Date;
-
-  constructor() {
-    this.loveIts = 0;
-    this.createdAt = new Date();
-  }*/
 
   ngOnInit() {
   }
 
-  /*likeIt() {
-    this.loveIts++;
-  }
-
-  unlikeIt() {
-    this.loveIts--;
-  }*/
 }
