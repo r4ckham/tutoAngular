@@ -10,27 +10,7 @@ import {Post} from './post';
 export class AppComponent {
   title = 'exercice';
 
-
   posts = [
-    {
-      title: faker.lorem.sentence(),
-      contenu: faker.lorem.paragraphs(),
-    },
-    {
-      title: faker.lorem.sentence(),
-      contenu: faker.lorem.paragraphs(),
-    },
-    {
-      title: faker.lorem.sentence(),
-      contenu: faker.lorem.paragraphs(),
-    },
-    {
-      title: faker.lorem.sentence(),
-      contenu: faker.lorem.paragraphs(),
-    },
-  ];
-
-  posts2 = [
     new Post(faker.lorem.sentence() , faker.lorem.paragraphs()),
     new Post(faker.lorem.sentence() , faker.lorem.paragraphs()),
     new Post(faker.lorem.sentence() , faker.lorem.paragraphs()),
